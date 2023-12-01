@@ -1,0 +1,39 @@
+/* Global Styles */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+#navbar-search input:focus {
+  outline: none;
+}
+#navbar-search-icon {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 3px;
+}
+
+#hero-car-game-img {
+  background: url("./assets/hitman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-container {
+  width: 900px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  width: 900px;
+  transition: transform 0.5s ease-in-out;
+}
