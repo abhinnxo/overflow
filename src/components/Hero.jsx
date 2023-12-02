@@ -59,7 +59,7 @@ const SecondNavbar = () => {
 const Carousel = () => {
   return (
     <div id="carousel" className="carousel-container">
-      <div className="carousel-wrapper flex gap-8" id="carouselWrapper">
+      <div className="carousel-wrapper flex" id="carouselWrapper">
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
