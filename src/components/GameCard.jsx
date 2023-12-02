@@ -1,9 +1,22 @@
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import GameImage from "../assets/hitman.jpg";
+import { FaRegBookmark } from "react-icons/fa6";
+import { FaBookmark } from "react-icons/fa6";
 
-const GameCard = () => {
+const GameCard = ({ tags, headerimage }) => {
+  const [wishlistState, setWishlistState] = useState(false);
+
   return (
     <div className="gamecard carousel-item flex h-[380px] w-[900px] bg-furfle">
-      <div id="hero-car-game-img" className="w-[550px] bg-blue-700"></div>
+      <div className="w-[620px]">
+        <img
+          src={headerimage}
+          alt="pic"
+          className="w-[620px] h-[100%]"
+          id="hero-car-game-img"
+        />
+      </div>
       <div className="p-4">
         <h1 className="text-3xl text-white">Hitman III</h1>
         <div className="w-[290px] flex gap-2 flex-wrap my-4">
@@ -12,8 +25,31 @@ const GameCard = () => {
           <img src={GameImage} width="140px" alt="game image" />
           <img src={GameImage} width="140px" alt="game image" />
         </div>
-        <p className="text-white">tags: Action, RPG, Adventure</p>
-        <p className="text-white">Rs. 1,299</p>
+
+        <p className="text-white flex items-center">
+          <span className="text-furfle bg-white px-1 rounded">tags:</span>
+          {tags.map((t, i) => (
+            <span key={i} className="ml-1">
+              {t + ","}
+            </span>
+          ))}
+        </p>
+        <p className="text-white mt-1.5">Rs. 1,299</p>
+        <div className="mt-2 flex justify-left items-center gap-4">
+          <div className="text-furfle bg-white rounded-md w-fit py-2 px-4 hover:bg-furfle outline outline-1 hover:text-white cursor-pointer">
+            Add to cart
+          </div>
+          <span
+            className="text-white cursor-pointer"
+            onClick={() => setWishlistState(!wishlistState)}
+          >
+            {wishlistState ? (
+              <FaBookmark className="text-2xl" />
+            ) : (
+              <FaRegBookmark className="text-2xl" />
+            )}
+          </span>
+        </div>
       </div>
     </div>
   );

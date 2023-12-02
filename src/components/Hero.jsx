@@ -1,24 +1,40 @@
 import GameCard from "./GameCard";
 import SearchIcon from "../assets/search.svg";
+import Hitman from "../assets/hitman.jpg";
 import "../scripts/carousel.js";
 
 const SecondNavbar = () => {
   return (
     <div className="h-[3rem] mt-28 mb-8 flex justify-between items-center bg-furfle rounded-lg px-4 lg:container">
       <div className="text-white flex gap-4">
-        <a href="/" className="pointer hover:bg-furfle2 px-4 py-2 rounded">
+        <a
+          href="/"
+          className="pointer hover:bg-white hover:text-furfle px-4 py-2 rounded"
+        >
           Home
         </a>
-        <a href="/" className="pointer hover:bg-furfle2 px-4 py-2 rounded">
+        <a
+          href="/"
+          className="pointer hover:bg-white hover:text-furfle px-4 py-2 rounded"
+        >
           Library
         </a>
-        <a href="/" className="pointer hover:bg-furfle2 px-4 py-2 rounded">
+        <a
+          href="/"
+          className="pointer hover:bg-white hover:text-furfle px-4 py-2 rounded"
+        >
           Top Sellers
         </a>
-        <a href="/" className="pointer hover:bg-furfle2 px-4 py-2 rounded">
+        <a
+          href="/"
+          className="pointer hover:bg-white hover:text-furfle px-4 py-2 rounded"
+        >
           Coming Soon
         </a>
-        <a href="/" className="pointer hover:bg-furfle2 px-4 py-2 rounded">
+        <a
+          href="/"
+          className="pointer hover:bg-white hover:text-furfle px-4 py-2 rounded"
+        >
           News & Updates
         </a>
       </div>
@@ -40,6 +56,19 @@ const SecondNavbar = () => {
   );
 };
 
+const Carousel = () => {
+  return (
+    <div id="carousel" className="carousel-container">
+      <div className="carousel-wrapper flex gap-8" id="carouselWrapper">
+        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
+        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
+        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
+        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
+        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
+      </div>
+    </div>
+  );
+};
 const Hero = () => {
   return (
     <div
@@ -51,15 +80,7 @@ const Hero = () => {
       {/* Heading */}
       <h1 className="text-2xl mb-8 mx-6 text-white">Featured & Recommended</h1>
       {/* Carousel */}
-      <div id="carousel" className="carousel-container">
-        <div className="carousel-wrapper flex gap-8" id="carouselWrapper">
-          <GameCard />
-          <GameCard />
-          <GameCard />
-          <GameCard />
-          <GameCard />
-        </div>
-      </div>
+      <Carousel />
     </div>
   );
 };
