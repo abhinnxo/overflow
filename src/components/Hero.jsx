@@ -73,7 +73,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="z-50 w-[100%] h-[100vh] opacity-90 flex flex-col items-center bg-lavander"
+      className="z-50 w-[100%] pb-24 opacity-90 flex flex-col items-center bg-lavander"
     >
       {/* Second Navbar */}
       <SecondNavbar />
