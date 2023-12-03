@@ -26,13 +26,16 @@
   background-size: cover;
   background-position: center;
 }
-
-.carousel-container {
-  /* width: fit-content; */
-  overflow: hidden;
+.pagingDotsClassName {
+  display: none;
 }
-
-.carousel-wrapper {
-  width: 900px;
-  transition: transform 0.5s ease-in-out;
+.nextButtonClassName, .prevButtonClassName {
+  position: relative;
+border-radius: 9999px;
+}
+.nextButtonClassName {
+  left: 63px;
+}
+.prevButtonClassName{
+  left: -60px;
 }

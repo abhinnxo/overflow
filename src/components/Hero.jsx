@@ -1,7 +1,9 @@
 import GameCard from "./GameCard";
 import SearchIcon from "../assets/search.svg";
 import Hitman from "../assets/hitman.jpg";
-import "../scripts/carousel.js";
+import Carousel from "nuka-carousel"
+import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft  } from "react-icons/md";
+
 
 const SecondNavbar = () => {
   return (
@@ -56,22 +58,36 @@ const SecondNavbar = () => {
   );
 };
 
-const Carousel = () => {
+const FnRCarousel = () => {
   return (
-    <div id="carousel" className="carousel-container">
-      <div className="carousel-wrapper flex" id="carouselWrapper">
+    <div id="carousel" className="carousel-containe w-[900px] h-[380px]">
+      <Carousel
+       adaptiveHeight='true' 
+       adaptiveHeightAnimation="false" 
+       autoplay="true"
+       autoplayInterval="5000"
+       wrapAround="true"
+       swiping="false"
+       defaultControlsConfig={{
+        pagingDotsClassName: "pagingDotsClassName",
+        nextButtonClassName: "nextButtonClassName",
+        prevButtonClassName: "prevButtonClassName",
+        nextButtonText: <MdOutlineKeyboardArrowRight className="text-4xl" />,
+        prevButtonText: <MdOutlineKeyboardArrowLeft  className="text-4xl" />,
+       }}
+      className="flex overflow-visible h-[380px]">
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
         <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
-        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} />
-      </div>
+        <GameCard headerimage={Hitman} tags={["Action", "RPG", "Adventure"]} /> 
+      </Carousel>
     </div>
   );
 };
 const Hero = () => {
   return (
-    <div
+    <div  
       id="hero"
       className="z-50 w-[100%] pb-24 opacity-90 flex flex-col items-center bg-lavander"
     >
@@ -80,7 +96,7 @@ const Hero = () => {
       {/* Heading */}
       <h1 className="text-2xl mb-8 mx-6 text-white">Featured & Recommended</h1>
       {/* Carousel */}
-      <Carousel />
+      <FnRCarousel />
     </div>
   );
 };
