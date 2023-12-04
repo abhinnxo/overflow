@@ -57,7 +57,6 @@ const SecondNavbar = () => {
     </div>
   );
 };
-
 const FnRCarousel = () => {
   return (
     <div id="carousel" className="carousel-containe w-[900px] h-[380px]">
@@ -89,12 +88,12 @@ const Hero = () => {
   return (
     <div  
       id="hero"
-      className="z-50 w-[100%] pb-24 opacity-90 flex flex-col items-center bg-lavander"
+      className="z-50 w-[100%] flex flex-col items-center"
     >
       {/* Second Navbar */}
       <SecondNavbar />
       {/* Heading */}
-      <h1 className="text-2xl mb-8 mx-6 text-white">Featured & Recommended</h1>
+      <h1 className="text-2xl font-semibold mb-8 mx-6 text-white">Featured & Recommended</h1>
       {/* Carousel */}
       <FnRCarousel />
     </div>

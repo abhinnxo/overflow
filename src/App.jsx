@@ -8,7 +8,7 @@ import BrowseByCategories from "./components/BrowseByCategories";
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-lavander">
       <Navbar />
       <Hero />
       <SpecialOffers />

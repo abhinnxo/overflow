@@ -16,7 +16,7 @@ import {
 // eslint-disable-next-line react/prop-types
 const CategoryCard = ({fromColor, categoryName, bgcimage}) => {
   return (
-    <div className="h-[300px] w-[300px] relative">
+    <div className="h-[300px] w-[300px] relative mx-5">
       <div className={`z-10 bg-gradient-to-t ${fromColor} to-none absolute h-[100%] w-[100%]`}></div>
       <h1                 
         className="text-2xl font-bold z-20 absolute bottom-0 left-1/2 -translate-x-1/2 mb-4 text-white"
@@ -31,18 +31,17 @@ const CategoryCard = ({fromColor, categoryName, bgcimage}) => {
 const BrowseByCategories = () => {
   return (
     <div className="pb-24 w-[100%]  ">
-      <h1 className="text-4xl text-center font-semibold my-10">
+      <h1 className="text-2xl text-center font-semibold my-10 text-white">
         Browse By Categories
       </h1>
       <div className="flex justify-center">
-        <div className="w-[1230px] h-[300px]">
+        <div className="w-[1355px] h-[300px]">
           <Carousel
             adaptiveHeight="true"
             adaptiveHeightAnimation="false"
             wrapAround="true"
             swiping="false"
             slidesToShow="4"
-            cellSpacing="10px"
             defaultControlsConfig={{
               pagingDotsClassName: "pagingDotsClassName",
               nextButtonClassName: "nextButtonClassName",
@@ -55,7 +54,7 @@ const BrowseByCategories = () => {
               ),
             }}  
             className="h-[300px] text-white"
-          >
+          >      
             <CategoryCard fromColor="from-red-800" categoryName="ACTION"  bgcimage={action} />
             <CategoryCard fromColor="from-green-500" categoryName="STRATEGY"  bgcimage={strategy} />
             <CategoryCard fromColor="from-blue-600" categoryName="SIMULATOR"  bgcimage={simulation} />

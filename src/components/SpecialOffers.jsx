@@ -46,7 +46,7 @@ const SpecialOffers = () => {
 
   return (
     <div className="lg:container flex mx-auto flex-col">
-      <h1 className="text-4xl font-bold text-center py-10 text-lavander">
+      <h1 className="text-2xl font-semibold text-center py-10 text-white">
         Special Offers
       </h1>
       <div className=" w-[fit] h-[250px] grid grid-cols-3 gap-4 mx-auto mb-24">
