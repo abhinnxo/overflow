@@ -54,7 +54,7 @@ const SpecialOffers = () => {
         <Card />
         <Card />
       </div>
-      <div className="my-32"></div>
+      <div className="mb-10"></div>
     </div>
   );
 };
