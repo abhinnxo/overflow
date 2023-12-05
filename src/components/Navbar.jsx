@@ -1,4 +1,5 @@
 import { FaDownload } from "react-icons/fa";
+import Overflow from "../assets/overflow-logo.png";
 
 const navbarStyles = {
   display: "flex",
@@ -15,7 +16,9 @@ const Navbar = () => {
   return (
     <div className="pt-4">
       <div className="lg:container mx-auto" style={navbarStyles}>
-        <h1 className="text-3xl text-white">Overflow</h1>
+        <a href="/">
+          <img src={Overflow} width="150px" />
+        </a>
         <div className="flex items-center gap-1">
           <a
             href="/"
