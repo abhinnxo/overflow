@@ -7,6 +7,7 @@ import SecondNavbar from "./components/SecondNavbar";
 import SpecialOffers from "./components/SpecialOffers";
 import BrowseByCategories from "./components/BrowseByCategories";
 import FnRCarousel from "./components/FnRCarousel";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <SpecialOffers />
       <BrowseByCategories />
+      <Footer />
     </div>
   );
 }

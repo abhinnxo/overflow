@@ -14,7 +14,7 @@ const navbarStyles = {
 const Navbar = () => {
   return (
     <div className="pt-4">
-      <div className="lg:container mx-auto justify-center" style={navbarStyles}>
+      <div className="lg:container mx-auto" style={navbarStyles}>
         <h1 className="text-3xl text-white">Overflow</h1>
         <div className="flex items-center gap-1">
           <a
