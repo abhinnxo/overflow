@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 
 import "./index.css";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import SecondNavbar from "./components/SecondNavbar";
 import SpecialOffers from "./components/SpecialOffers";
@@ -15,7 +14,6 @@ function App() {
       <Navbar />
       <SecondNavbar />
       <FnRCarousel />
-      <Hero />
       <SpecialOffers />
       <BrowseByCategories />
       <Footer />
