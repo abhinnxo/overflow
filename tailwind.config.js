@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lavander: "#363b74",
+        lavander: "#6600cc",
         furfle: "#800ff3",
         furfle2: "#673888",
       },
