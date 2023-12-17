@@ -28,13 +28,39 @@
 .pagingDotsClassName {
   display: none;
 }
-.nextButtonClassName, .prevButtonClassName {
+.nextButtonClassName,
+.prevButtonClassName {
   position: relative;
-border-radius: 9999px;
+  border-radius: 9999px;
 }
 .nextButtonClassName {
   left: 60px;
 }
-.prevButtonClassName{
+.prevButtonClassName {
   left: -60px;
+}
+
+/* Underline effect */
+.underlineeffect {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underlineeffect:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  background: #ffffff;
+  height: 2px;
+  transition-property: left right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underlineeffect:hover:after,
+.underlineeffect:focus:after,
+.underlineeffect:active:after {
+  right: 0;
 }

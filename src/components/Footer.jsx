@@ -12,65 +12,85 @@ const Footer = () => {
         />
         <div className="flex justify-between md:container">
           <div className="flex flex-col leading-8">
-            <h1 className="font-semibold text-2xl mb-8">Useful Links</h1>
-            <a href="/" className="leading-10">
-              About Us
-            </a>
-            <a href="/" className="leading-10">
-              Privacy Policy
-            </a>
-            <a href="/" className="leading-10">
-              News & Media
-            </a>
-            <a href="/" className="leading-10">
-              More Products
-            </a>
-            <a href="/" className="leading-10">
-              Customer Support
-            </a>
+            <h1 className="font-semibold text-2xl mb-8 ">Useful Links</h1>
+            <span>
+              <a href="/" className="leading-10 underlineeffect">
+                About Us
+              </a>
+            </span>
+            <span>
+              <a href="/" className="leading-10 underlineeffect">
+                Privacy Policy
+              </a>
+            </span>
+            <span>
+              <a href="/" className="leading-10 underlineeffect">
+                News & Media
+              </a>
+            </span>
+            <span>
+              <a href="/" className="leading-10 underlineeffect">
+                More Products
+              </a>
+            </span>
+            <span>
+              <a href="/" className="leading-10 underlineeffect">
+                Customer Support
+              </a>
+            </span>
           </div>
           <div className="flex flex-col leading-8">
             <h1 className="font-semibold text-2xl mb-8">My Links</h1>
-            <a
-              href="https://www.linkedin.com/in/abhinnkrishn/"
-              target="_blank"
-              rel="noreferrer"
-              className="leading-10"
-            >
-              linkedin/abhinnkrishn
-            </a>
-            <a
-              href="https://github.com/abhinnxo"
-              target="_blank"
-              rel="noreferrer"
-              className="leading-10"
-            >
-              github/abhinnxo
-            </a>
-            <a
-              href="https://www.abhinn.xyz"
-              target="_blank"
-              rel="noreferrer"
-              className="leading-10"
-            >
-              abhinn.xyz
-            </a>
-            <a
-              href="https://www.instagram.com/abhinnxo/"
-              target="_blank"
-              rel="noreferrer"
-              className="leading-10"
-            >
-              instagram/abhinnxo
-            </a>
-            <a
-              href="https://twitter.com/abhinnxo"
-              target="_blank"
-              rel="noreferrer"
-              className="leading-10"
-            >
-              X/abhinnxo
-            </a>
+            <span>
+              <a
+                href="https://www.linkedin.com/in/abhinnkrishn/"
+                target="_blank"
+                rel="noreferrer"
+                className="leading-10 underlineeffect"
+              >
+                linkedin/abhinnkrishn
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://github.com/abhinnxo"
+                target="_blank"
+                rel="noreferrer"
+                className="leading-10 underlineeffect"
+              >
+                github/abhinnxo
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.abhinn.xyz"
+                target="_blank"
+                rel="noreferrer"
+                className="leading-10 underlineeffect"
+              >
+                abhinn.xyz
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.instagram.com/abhinnxo/"
+                target="_blank"
+                rel="noreferrer"
+                className="leading-10 underlineeffect"
+              >
+                instagram/abhinnxo
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://twitter.com/abhinnxo"
+                target="_blank"
+                rel="noreferrer"
+                className="leading-10 underlineeffect"
+              >
+                X/abhinnxo
+              </a>
+            </span>
           </div>
           <div className="flex flex-col leading-8">
             <h1 className="font-semibold text-2xl mb-8">Address</h1>
